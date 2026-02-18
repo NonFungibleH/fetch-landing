@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Fetch</title>
+  <link rel="icon" type="image/png" href="icon128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <a href="index.html" style="display:flex;align-items:center;gap:10px;">
+          <img src="icon128.png" alt="Fetch" class="nav-logo">
+          <span class="nav-name">Fetch</span>
+        </a>
+      </div>
+      <a href="https://chrome.google.com/webstore" class="nav-cta">Add to Chrome — it's free</a>
+    </div>
+  </nav>
+
+  <div class="policy-wrap">
+    <h1>Privacy Policy</h1>
+    <p class="policy-date">Last updated: January 2026</p>
+
+    <p>Fetch ("we", "our", "the extension") is a free Chrome browser extension that reads publicly available shipping and returns information from online retailer websites. This policy explains what data Fetch accesses, how it is used, and your rights.</p>
+
+    <h2>1. Data we collect</h2>
+    <p>Fetch does <strong>not</strong> collect, store, transmit or sell any personal data. Specifically:</p>
+    <ul>
+      <li>We do not collect your name, email address, or any identifying information.</li>
+      <li>We do not track your browsing history.</li>
+      <li>We do not store the URLs of pages you visit.</li>
+      <li>We do not use cookies or any persistent tracking mechanisms.</li>
+      <li>We do not create or require a user account.</li>
+    </ul>
+
+    <h2>2. How Fetch works</h2>
+    <p>When you click the Fetch icon on a product page, the extension reads the URL of the active tab and makes outbound requests to that retailer's publicly accessible shipping and returns policy pages. This processing happens entirely within your browser. No data is sent to our servers.</p>
+
+    <h2>3. Permissions</h2>
+    <p>Fetch requests the following Chrome permissions:</p>
+    <ul>
+      <li><strong>activeTab</strong> — to read the URL of the page you are currently viewing, so Fetch knows which retailer to look up.</li>
+      <li><strong>scripting</strong> — to inject a content script as a fallback on sites that block direct fetch requests (e.g. Cloudflare-protected sites), allowing Fetch to read the page HTML already loaded in your browser.</li>
+      <li><strong>tabs</strong> — to update the active tab URL when you click "Continue shopping".</li>
+    </ul>
+    <p>None of these permissions are used to collect or transmit personal information.</p>
+
+    <h2>4. Affiliate links</h2>
+    <p>The "Continue shopping" button may route through an affiliate network (such as Skimlinks or Awin). This means the retailer's website may set an affiliate cookie in your browser when you land on their page. This is standard affiliate marketing practice. We do not receive or store any personal data as part of this process. The retailer's own privacy policy governs what they collect on their site.</p>
+
+    <h2>5. Third-party services</h2>
+    <p>Fetch makes HTTP requests to retailer websites to fetch their publicly available policy pages. These are the same requests your browser would make if you navigated to those pages manually. We do not use any third-party analytics, advertising or tracking services within the extension itself.</p>
+
+    <h2>6. Children's privacy</h2>
+    <p>Fetch does not knowingly collect any information from children under the age of 13.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please open an issue on our GitHub repository or contact us via the Chrome Web Store listing.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="icon128.png" alt="Fetch" class="footer-logo">
+        <span>Fetch</span>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </nav>
+      <p class="footer-copy">© 2026 Fetch.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
