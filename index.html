@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fetch – Instant Delivery Info for Any Shop</title>
-  <meta name="description" content="Fetch is a free Chrome extension that instantly shows you delivery costs, free delivery thresholds, couriers, and returns policies on any online shop.">
+  <meta name="description" content="Fetch is a free Chrome extension that instantly shows delivery costs, arrival dates, free delivery thresholds and returns policies — then compares across all your open tabs.">
   <meta property="og:title" content="Fetch – Instant Delivery Info for Any Shop">
-  <meta property="og:description" content="Know before you buy. Fetch shows delivery costs, couriers, free delivery thresholds and returns at a glance.">
+  <meta property="og:description" content="Know before you buy. Fetch shows delivery costs, arrival dates, free delivery thresholds and returns at a glance — then compares across tabs.">
   <meta property="og:image" content="og-image.png">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="icon128.png">
@@ -25,8 +25,8 @@
         <span class="nav-name">Fetch</span>
       </div>
       <a href="https://chromewebstore.google.com/detail/fetch-%E2%80%93-instant-shipping/jaoeogpphcdclkifeknclfoihjhhogfm?authuser=2&hl=en" class="nav-cta" target="_blank" rel="noopener noreferrer">
-  Add to Chrome — it's free
-</a>
+        Add to Chrome — it's free
+      </a>
     </div>
   </nav>
 
@@ -36,7 +36,7 @@
       <div class="hero-text">
         <div class="hero-badge">Free Chrome Extension</div>
         <h1 class="hero-heading">Know the delivery<br>before you buy</h1>
-        <p class="hero-sub">Fetch instantly shows you delivery costs, free delivery thresholds and returns policies on any online shop — without leaving the page.</p>
+        <p class="hero-sub">Fetch automatically appears on product pages, showing delivery options, exact arrival dates and returns policies. Got multiple shops open? Fetch compares delivery across all your tabs so you always pick the best deal.</p>
         <div class="hero-actions">
           <a href="https://chromewebstore.google.com/detail/fetch-%E2%80%93-instant-shipping/jaoeogpphcdclkifeknclfoihjhhogfm?authuser=2&hl=en" id="install" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="none" class="btn-icon">
@@ -48,6 +48,7 @@
           <p class="hero-note">Works on Chrome · No account needed</p>
         </div>
       </div>
+
       <div class="hero-visual">
         <div class="popup-mock">
           <div class="mock-header">
@@ -59,6 +60,40 @@
           </div>
           <div class="mock-site">dogtreats.com</div>
           <div class="mock-body">
+
+            <!-- Compare tabs -->
+            <div class="mock-section">
+              <div class="mock-section-header">
+                <span class="mock-section-icon">🔄</span>
+                <span class="mock-section-title">COMPARE TABS</span>
+                <div class="mock-sort-tabs">
+                  <span class="mock-sort-tab active">Fastest</span>
+                  <span class="mock-sort-tab">Cheapest</span>
+                </div>
+              </div>
+              <div class="mock-comp-rows">
+                <div class="mock-comp-row is-best is-current">
+                  <span class="mock-comp-favicon">🛒</span>
+                  <span class="mock-comp-star">★</span>
+                  <span class="mock-comp-name is-current">dogtreats.com</span>
+                  <span class="mock-comp-del free">Next Day · Free</span>
+                </div>
+                <div class="mock-comp-row">
+                  <span class="mock-comp-favicon">🐾</span>
+                  <span class="mock-comp-star">★</span>
+                  <span class="mock-comp-name">petshop.co.uk</span>
+                  <span class="mock-comp-del">Next Day · £4.99</span>
+                </div>
+                <div class="mock-comp-row">
+                  <span class="mock-comp-favicon">🦴</span>
+                  <span class="mock-comp-star">★</span>
+                  <span class="mock-comp-name">zooplus.com</span>
+                  <span class="mock-comp-del">3–5 days · £2.99</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delivery options -->
             <div class="mock-section">
               <div class="mock-section-header">
                 <span class="mock-section-icon">🚚</span>
@@ -67,42 +102,41 @@
               </div>
               <div class="mock-rows">
                 <div class="mock-row">
-                  <span class="mock-row-name">Standard Delivery</span>
-                  <span class="mock-row-time">3–5 days</span>
+                  <div>
+                    <span class="mock-row-name">Next Day</span>
+                    <span class="mock-row-cutoff">order by 9pm tonight</span>
+                  </div>
+                  <span class="mock-row-time">Arrives Mon 3 Mar</span>
+                  <span class="mock-row-cost free">Free</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-row-name">Express</span>
+                  <span class="mock-row-time">Arrives Tue 4 Mar</span>
                   <span class="mock-row-cost">£3.99</span>
                 </div>
                 <div class="mock-row">
-                  <span class="mock-row-name">Express Delivery</span>
-                  <span class="mock-row-time">1–2 days</span>
-                  <span class="mock-row-cost">£5.99</span>
-                </div>
-                <div class="mock-row">
-                  <span class="mock-row-name">Next Day</span>
-                  <span class="mock-row-time">Next day</span>
-                  <span class="mock-row-cost">£7.99</span>
+                  <span class="mock-row-name">Standard</span>
+                  <span class="mock-row-time">Arrives Fri 7 Mar</span>
+                  <span class="mock-row-cost">£1.99</span>
                 </div>
               </div>
             </div>
+
+            <!-- Free delivery progress -->
             <div class="mock-section">
               <div class="mock-section-header">
                 <span class="mock-section-icon">🎁</span>
                 <span class="mock-section-title">FREE DELIVERY</span>
                 <span class="mock-dot blue"></span>
               </div>
-              <div class="mock-threshold">Free over £60.00</div>
-            </div>
-            <div class="mock-section">
-              <div class="mock-section-header">
-                <span class="mock-section-icon">↩</span>
-                <span class="mock-section-title">RETURNS</span>
-                <span class="mock-dot blue"></span>
-              </div>
-              <div class="mock-returns">
-                <span class="mock-returns-window">30-day returns</span>
-                <span class="mock-badge free">Free returns</span>
+              <div class="mock-progress-wrap">
+                <div class="mock-progress-bar">
+                  <div class="mock-progress-fill" style="width: 73%"></div>
+                </div>
+                <p class="mock-progress-msg">Add £16.00 more for free delivery 🐾</p>
               </div>
             </div>
-            <button class="mock-btn">Continue shopping →</button>
+
           </div>
         </div>
         <div class="hero-mascot-wrap">
@@ -116,24 +150,24 @@
   <section class="how">
     <div class="container">
       <h2 class="section-heading">How it works</h2>
-      <p class="section-sub">Three seconds to smarter shopping decisions.</p>
+      <p class="section-sub">From landing on a page to knowing the best deal — in seconds.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
-          <h3>Browse any shop</h3>
-          <p>Visit any product page on any online store — Fetch works across thousands of retailers.</p>
+          <h3>Browse product pages</h3>
+          <p>Fetch's floating button appears automatically when you land on a shop product page. No clicking the toolbar needed.</p>
         </div>
         <div class="step-arrow">→</div>
         <div class="step">
           <div class="step-num">2</div>
-          <h3>Click Fetch</h3>
-          <p>Click the Fetch icon in your toolbar. In seconds it sniffs out the delivery policy so you don't have to.</p>
+          <h3>See delivery details</h3>
+          <p>Tap Fetch to instantly see all delivery tiers, exact arrival dates, the free delivery threshold and the returns policy.</p>
         </div>
         <div class="step-arrow">→</div>
         <div class="step">
           <div class="step-num">3</div>
-          <h3>Know before you buy</h3>
-          <p>See delivery options, free delivery thresholds and the returns window — all in one glance.</p>
+          <h3>Compare &amp; choose</h3>
+          <p>Browsing multiple shops? Fetch ranks delivery across all your open tabs — switch to the cheapest or fastest deal in one tap.</p>
         </div>
       </div>
     </div>
@@ -143,36 +177,47 @@
   <section class="features">
     <div class="container">
       <h2 class="section-heading">Everything you need to know</h2>
+      <p class="section-sub">Built for shoppers who hate surprises at checkout.</p>
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="feature-icon">🚚</div>
-          <h3>Delivery options</h3>
-          <p>See every delivery tier — Standard, Express, Next Day — with times and costs, instantly.</p>
+          <div class="feature-icon">📅</div>
+          <h3>Arrival dates</h3>
+          <p>See exactly when your order arrives — not just "3–5 days". Order-by cutoff times tell you the last moment to buy to get next-day delivery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Compare across tabs</h3>
+          <p>Open multiple shops and Fetch ranks them by fastest or cheapest delivery. One tap switches you straight to the winner.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎁</div>
-          <h3>Free delivery threshold</h3>
-          <p>Know exactly how much you need to spend to unlock free delivery. No more hunting for the banner.</p>
+          <h3>Free delivery progress</h3>
+          <p>See exactly how much more you need to unlock free delivery, with a progress bar that updates as your cart grows.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">↩</div>
           <h3>Returns policy</h3>
-          <p>How many days to return? Who pays the postage? Fetch finds it so you're never caught out.</p>
+          <p>How many days to return? Is it free or paid? Fetch surfaces the returns policy automatically so you're never caught out.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Instant, everywhere</h3>
-          <p>Works on every ecommerce webiste, including Shopify, Wordpress, custom sites, and more.</p>
+          <div class="feature-icon">🐾</div>
+          <h3>Auto-shows on product pages</h3>
+          <p>Fetch's floating button pops up automatically when you land on a product page. Delivery info is always one tap away.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI fallback</h3>
+          <p>When standard scanning can't find delivery info, Fetch switches to AI to get the answer — even on unusual or obfuscated sites.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>5 languages</h3>
+          <p>Fetch speaks English, French, German, Spanish and Portuguese — and picks your browser language automatically.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔒</div>
-          <h3>No account, no data</h3>
-          <p>Fetch doesn't track you, store your data or require any sign-up. Install and go.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🐶</div>
-          <h3>Always improving</h3>
-          <p>Fetch learns more sites all the time. Found a site it doesn't support? Let us know.</p>
+          <h3>No account, no tracking</h3>
+          <p>Fetch doesn't collect your data, track your browsing or require sign-up. Install and use immediately — completely private.</p>
         </div>
       </div>
     </div>
